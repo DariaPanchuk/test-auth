@@ -1,37 +1,43 @@
-<article class="example" id="uk">
-  <h1>HTML-partials</h1>
-
-  <!--
-    ❗️❗️❗️ The path to images from the HTML partial
-    is the same as from the index.html file
-  -->
-  <img src="images/logo.png" alt="" width="320" />
-
-  <p>
-    The
-    <a
-      href="https://github.com/posthtml/posthtml-include"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      posthtml-include
-    </a>
-    plugin allows you to add code from other HTML files (fragments) to HTML page
-    files. Fragments are stored in the <code>src/partials</code> folder. The
-    addition occurs when compiling page files, such as <code>index.html</code>.
-  </p>
-
-  <p>
-    This <code>example.html</code> file is an example of such a snippet, with
-    the markup of a certain part of the main page. This is very convenient for
-    team development on student projects, when several people write in one HTML
-    file at once.
-  </p>
-
-  <p>
-    The syntax for adding a fragment to the main file is:
-    <code> &lt;include src="./partials/filename.html"&gt;&lt;/include&gt;</code>
-  </p>
-
-  <div class="background"></div>
-</article>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <div class="modal-form-area">
+      <p class="modal-title">Sign up form</p>
+      <form class="modal-form">
+        <ul class="form-list list">
+          <li class="form-list-item">
+            <label class="modal-form-label">
+              <span class="label-text">
+                Name
+              </span>
+              <input class="modal-form-field username" id="username" type="text" name="username"
+                placeholder="Vova zi Lvova">
+            </label>
+          </li>
+          <li class="form-list-item">
+            <label class="modal-form-label">
+              <span class="label-text">
+                Mail
+              </span>
+              <input class="modal-form-field email" id="email" type="email" name="email" placeholder="1234@gmail.com">
+            </label>
+          </li>
+          <li class="form-list-item">
+            <label class="modal-form-label">
+              <span class="label-text">
+                Password
+              </span>
+              <input class="modal-form-field password" id="password" type="password" name="password"
+                placeholder="1234password">
+            </label>
+          </li>
+        </ul>
+        <button class="form__button btn-checkbox btn" type="submit" id="signUp">
+          <span class="form__text">
+            Sign up
+          </span>
+        </button>
+    </div>
+    </form>
+  </div>
+</div>
+</div>
